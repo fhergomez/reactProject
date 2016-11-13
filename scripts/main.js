@@ -11,7 +11,7 @@ var StorePicker = React.createClass({
     return (
       <form className = "store-selector">
         <h2>Please enter a store</h2>
-        <input type="text" ref="storeId" placeholder="Name your store" required/>
+        <input type="text" ref="storeId" required/>
         <input type="submit"/>
       </form>
     )
