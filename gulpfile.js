@@ -21,14 +21,15 @@ var historyApiFallback = require('connect-history-api-fallback')
 */
 
 var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
+var ghPages      = require('gulp-gh-pages');
 
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 
