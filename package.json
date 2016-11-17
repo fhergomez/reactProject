@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://fernandogomez.io/reactProject",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "scripts": {
+
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
